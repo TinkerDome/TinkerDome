@@ -1,10 +1,10 @@
 # Site
-title:          JBlog
-bio:            'Just a simple Jekyll theme'
-description:    "JBlog is a minimal, one column and blue jekyll theme for your blog."
+title:          Tinker Dome
+bio:            'An Engineer`s work book'
+description:    "Tinker Dome is a project to show case the work we have been doing"
 picture:        'assets/img/profile.png'
 locale:         en_US
-url:            https://alperenbozkurt.github.io/JBlog
+url:            https://tinkerdome.com
 
 
 # Jekyll
@@ -33,11 +33,11 @@ facebook: username
   #ad-client:
   #ad-slot:
 #bing-verify:
-github: username
+github: tinkerdome
 stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin: username
+#linkedin: username
 #xing: username
-instagram: username
+instagram: itinkernaut
 lastfm: username
 tumblr: username
 #pinterest: username

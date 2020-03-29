@@ -1,14 +1,14 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, JBlog]
-date: 2016-03-21
+title: About the Tinker Dome
+tags: [about, blog]
+date: 2020-03-29
 ---
 
 ![jekyll Image](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/02/1424055625jekyll.png)
 {: .image-pull-right}
 
-<center><b>JBlog</b> is a simple jekyll theme.</center>
+<center><b>Tinker Dome</b>an engineers note</center>
 
 ## About
 
