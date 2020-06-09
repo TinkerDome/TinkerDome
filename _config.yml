@@ -3,3 +3,8 @@ baseurl: ""
 title: "Tinker Dome"
 
 destination: html
+
+exclude:
+- ".gitignore"
+- "tinkerdome.code-workspace"
+- ".jekyll-cache"
