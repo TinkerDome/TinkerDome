@@ -1,3 +1,5 @@
 url: "https://tinkerdome.com"
 baseurl: ""
 title: "Tinker Dome"
+
+destination: html
