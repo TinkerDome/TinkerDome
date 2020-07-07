@@ -1,0 +1,58 @@
+.title-decorations {
+    font-weight: bold;
+}
+
+.tagline-decoration{
+    font-family: 'Cabin', sans-serif;
+}
+
+.banner-decoration{
+    background-image: url("/assets/images/tinkerdome_banner.png");
+    background-size: contain;
+}
+
+.banner-logo{
+    height: 80%;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.banner-logo-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner-text{
+    float: right;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 544px) {  
+    .title-decorations {font-size:3rem;} /*1rem = 16px*/
+    .tagline-decoration{font-size:1rem;}
+    .banner-decoration {
+      visibility: hidden;
+      height: 0px;
+    }
+  }
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    .title-decorations {font-size:3.5rem;} /*1rem = 16px*/
+    .tagline-decoration{font-size:1.5rem;}
+    .banner-decoration {height: 33vh;}
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .title-decorations {font-size:3.5rem;} /*1rem = 16px*/
+    .tagline-decoration{font-size:1.5rem;}
+    .banner-decoration {height: 44vh;}
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .title-decorations {font-size:4rem;} /*1rem = 16px*/    
+    .tagline-decoration{font-size:2rem;}
+  }
