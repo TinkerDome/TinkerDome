@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="container">
+	<div class="row">
+		<div class="col-3">
+			<img src="/assets/images/{{page.image.path}}" class="w-100" alt="welcome to tinkerdome">
+		</div><!-- /.medium-7.columns -->
+
+		<div class="col-9">
+			<h1>{{ page.title }}</h1>
+			<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+			<hr />
+			{{ content }}
+		</div><!-- /.medium-5.columns -->
+	</div><!-- /.row -->
+</div>
+
