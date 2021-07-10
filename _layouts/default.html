@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="{{ '/css/bootstrap.css' }}">
   </head>
   <body>
+    {%- include header/index.html -%}
     {{ content}}
     <script src="{{'/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/js/typewriter.js' | prepend: site.baseurl}}"></script>
     {%- include footer.html -%}
   </body>
 </html>
