@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
   var dataList = [
-    "Electonics",
+    "Electronics",
     "Arduino, Esp32",
     "Raspberry Pi",
     "Robotics, Drone",
