@@ -1,7 +1,7 @@
 <footer class="footer mt-auto pt-3 bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-3 col-lg-3 mb-3">
+      <div class="col-6 col-lg-3 mb-3">
         <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
           <a class="navbar-brand" href="#">
             <img src="/assets/images/logo_background_400x400.png" alt="" width="24" height="24">
@@ -12,20 +12,22 @@
           <li class="mb-2">Do it yourself | Place where technology and art meets <a href="/"></a> </li>
         </ul>
       </div>
-      <div class="col-3 col-lg-3 mb-3">
-        <h5>Whats New!</h5>
+      <div class="col-6 col-lg-3 mb-3">
+        <h6>Whats New!</h6>
+        <ul class="list-unstyled">
+          {% for post in site.posts limit:5 %}
+            <li class="mb-2"><a href="{{ post.url }}">{{post.title}}</a></p></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3 mb-3">
+        <h6>Whats Popular!</h6>
         <ul class="list-unstyled">
           <li class="mb-2"><a href="/"></a></li>
         </ul>
       </div>
-      <div class="col-3 col-lg-3 mb-3">
-        <h5>Whats Popular!</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="/"></a></li>
-        </ul>
-      </div>
-      <div class="col-3 col-lg-3 mb-3">
-        <h5>Social Media</h5>
+      <div class="col-6 col-lg-3 mb-3">
+        <h6>Social Media</h6>
         <ul class="list-unstyled">
             <li>
                 <a class="ms-2 genericon genericon-github footer-social-link" href="https://github.com/tinkerdome" target="_blank"></a>

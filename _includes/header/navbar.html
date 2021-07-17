@@ -2,12 +2,14 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
       <h1>
-        <h1>{{site.title}}
-        <h3>Do It Yourself
+        <h2>{{site.title}}</h2>
+        {% if page.welcome == true %}
+          <h6>Do It Yourself
             <span class="typewriter" id="typewriter-text">
                 <span id="typewriter-text-holder" class="tagline-decoration"></span>
             </span>
-        </h3>
+          </h6>
+        {% endif %}
       </h1>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
