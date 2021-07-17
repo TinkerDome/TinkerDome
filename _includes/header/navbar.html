@@ -2,12 +2,14 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
       <h1>
-        <h1>{{site.title}}
-        <h3>Do It Yourself
+        <h2>{{site.title}}</h2>
+        {% if page.welcome == true %}
+          <h6>Do It Yourself
             <span class="typewriter" id="typewriter-text">
                 <span id="typewriter-text-holder" class="tagline-decoration"></span>
             </span>
-        </h3>
+          </h6>
+        {% endif %}
       </h1>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,9 +48,9 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success genericon genericon-search" type="submit"></button>
+      <form class="d-flex" id="search-container" style="position: relative; display: inline-block; direction: ltr;">
+        <input class="form-control me-1" type="search" id="search-input" placeholder="Search..." aria-label="Search" style="position: relative">
+        <ul id="search-results-container" class="search-results-ul card shadow border border-top-0 list-unstyled" style="position: absolute;top: 100%;z-index: 100;left: 0px;right: auto;width: 100%;overflow: hidden;"></ul>
       </form>
     </div>
   </div>
