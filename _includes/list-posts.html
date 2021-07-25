@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     <h2 class="my-3">{{ include.categoryTitle }}</h2>
     <div class="row">
     {% for post in site.categories[include.category] limit:include.entries offset:include.offset %}
