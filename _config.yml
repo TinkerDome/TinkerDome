@@ -8,3 +8,7 @@ exclude:
 - ".gitignore"
 - "tinkerdome.code-workspace"
 - ".jekyll-cache"
+
+collections:
+  videoPosts:
+    output: true
