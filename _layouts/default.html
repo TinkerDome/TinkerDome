@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/typewriter.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/genericons/3.1/genericons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/css/bootstrap.css' }}">
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' }}">
     <style type="text/css">
       #search-results-container li a {
         text-decoration: none
@@ -22,10 +22,10 @@
       {{ content}}
     </main>
     {%- include footer.html -%}
-    <script src="{{'/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
-    <script src="{{'/js/typewriter.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/assets/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/assets/js/typewriter.js' | prepend: site.baseurl}}"></script>
     <!-- TODO: Better to create a seperate search page for better performance -->
-    <script src="{{'/js/simple-jekyll-search.min.js' }}" type="text/javascript"></script>
+    <script src="{{'/assets/js/simple-jekyll-search.min.js' }}" type="text/javascript"></script>
     <script>
       SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
