@@ -1,0 +1,10 @@
+---
+layout: default
+permalink: /videos.html
+title: Video posts
+---
+{% for videoPost in site.videoPosts %}
+  <div class="videoPost">
+    <h2><a href="{{ videoPost.url }}">{{ videoPost.title }}</a></h2>
+  </div>
+{% endfor %}

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-3">
+			<img src="/assets/images/{{page.category}}/{{page.image_path}}/thumbnail.png" class="w-100" alt="welcome to tinkerdome">
+			<ul class="list-group">
+    		  {% if page.image_path %}<li class="list-group-item"><a href="#Gallery">Gallery</a></li>{% endif %}
+              {% if page.components %}<li class="list-group-item"><a href="#Components">Components</a></li>{% endif %}
+              {% if page.steps %}
+          		{% for step in page.steps %}
+	              <li class="list-group-item"><a href="#{{step | slugify}}">{{step | replace: "-", " "}}</a></li>
+          		{% endfor %}
+      		  {% endif %}
+			</ul>
+		</div><!-- /.medium-7.columns -->
+
+		<div class="col-9">
+			<h1>{{ page.title }}</h1>
+			<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+			<hr />
+			<h3 id="Gallery">Gallery</h3>
+			{%- include videoPost/imageRow.html folder=page.image_path -%}
+			<h3 id="Components">Hardware components</h3>
+			{%- include videoPost/componentsRow.html items=page.components -%}
+			{{ content }}
+		</div><!-- /.medium-5.columns -->
+	</div><!-- /.row -->
+</div>
+
