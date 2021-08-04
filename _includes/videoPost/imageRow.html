@@ -7,21 +7,15 @@
     {% assign filenameparts = file.path | split: "/" %}
       {% assign filename = filenameparts | last | replace: file.extname,"" %}
        <figure>
-        <a href=
-          {% if include.image_path contains "://" %}
-            "{{ include.image_path }}"
-          {% else %}
-            "{{ file.path | relative_url }}"
-          {% endif %}>
-        <img src=
+        <img style="float: left;max-height: 12em;background-size: cover;" src=
           {% if include.image_path contains "://" %}
             "{{ include.image_path }}"
           {% else %}
             "{{ file.path }}"
           {% endif %}
           alt="{{file.filename}}"
-          class="w-100 img-thumbnail img-fluid"
-          ></a>
+          class="gallery-item img-thumbnail img-fluid"
+          >
         {% if include.caption %}
           <figcaption>
             {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
@@ -31,3 +25,18 @@
     {% endif %}
   {% endfor %}
  </div>
+
+ <!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="" class="modal-img w-100" alt="modal img">
+      </div>
+    </div>
+  </div>
+</div>
